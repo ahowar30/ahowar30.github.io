@@ -1,9 +1,12 @@
 body {
-	background-color: gray;
+	background-color: coral;
 }
 
 p, h1, h2, h3 {
 	font-family: "Arial";
+	margin-left: 50px;
+	margin-right:50px;
+	
 }
 
 #groupname {
