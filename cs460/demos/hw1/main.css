@@ -10,8 +10,10 @@ p, h1, h2, h3, ol, ul {
 }
 
 #code {
-	margin: 50px;
+	margin-left: 150px;
+	margin-right: 150px;
 	border: 1px solid black;
+	background-clip: border-box
 	background-color: #222222;
     color: #CCCCCC;
 }
