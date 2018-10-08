@@ -18,8 +18,33 @@
 		
 		<p>There is an belief held by many people in some East Asian countries that a person's bloodtype is a useful predictor of that person's personality and behavior. This is very similar to the idea that zodiac signs have a bearing on one's personality.<br/><br/></p>
         
-        <p align="center">Input your bloodtype to see what your personality is according to bloodtype personality theory.
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<script src="js/paperclamp-name.js"></script>					
+        <p align="center" id="changetext">Input your bloodtype to see what your personality is according to bloodtype personality theory.<br/></p>
+        
+        <input type="text" id="bloodtext" value="" >
+        <button onclick="readBlood()" >Enter</button>
+
+        <script>                
+        function readBlood(){
+        var bloodtype = document.getElementById("bloodtext").value;
+            switch(bloodtype) {
+    			case bloodtype = "a" || "A":
+        			
+        			break;
+    			case bloodtype = "b" || "B":
+        			
+        			break;
+    			case bloodtype = "ab" || "AB":
+       				
+                    break;
+                case bloodtype = "o":
+                	
+                    break;
+                default:
+				document.getElementById("changetext").innerHTML = "Please input an actual bloodtype";
+			}           
+		}		 
+</script>
+
+
+        
 	</body>
