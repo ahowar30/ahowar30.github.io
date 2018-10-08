@@ -18,7 +18,7 @@
 		
 		<p>There is a belief held by many people in some East Asian countries that a person's bloodtype is a useful predictor of that person's personality and behavior. This is very similar to the idea that zodiac signs have a bearing on one's personality.<br/><br/></p>
         
-        <p align="center" id="changetext">Input your bloodtype to see what your personality is according to bloodtype personality theory.<br/></p>
+        <p align="center" id="changetext">Input your bloodtype letter(s) to see what your personality is according to bloodtype personality theory.<br/></p>
         
         <input type="text" id="bloodtext" value="" >
         <button onclick="readBlood()" >Enter</button>
@@ -44,7 +44,7 @@
                                         document.getElementById("description").innerHTML = "<p align='center'> You are Type O, which means you are: <ul> <li> Ambitious </li>  <li> Confident </li> <li> Agreeable </li>  <li> Athletic </li> <li> Competitive </li> </ul></p>" 
                     break;
                 default:
-				document.getElementById("changetext").innerHTML = "That is not a bloodtype. Please try again.";
+				document.getElementById("changetext").innerHTML = "Please try again. (Don't use + or -)";
                                     document.getElementById("description").innerHTML = "<p align='center'> </p>" 
 			}           
 		} 
