@@ -16,7 +16,7 @@
 
 		<h1 align="center">Bloodtype Personality<br/></h1>
 		
-		<p>There is an belief held by many people in some East Asian countries that a person's bloodtype is a useful predictor of that person's personality and behavior. This is very similar to the idea that zodiac signs have a bearing on one's personality.<br/><br/></p>
+		<p>There is a belief held by many people in some East Asian countries that a person's bloodtype is a useful predictor of that person's personality and behavior. This is very similar to the idea that zodiac signs have a bearing on one's personality.<br/><br/></p>
         
         <p align="center" id="changetext">Input your bloodtype to see what your personality is according to bloodtype personality theory.<br/></p>
         
@@ -25,26 +25,33 @@
 
         <script>                
         function readBlood(){
-        var bloodtype = document.getElementById("bloodtext").value;
+			var bloodtype = document.getElementById("bloodtext").value;
             switch(bloodtype) {
     			case bloodtype = "a" || "A":
-        			
+        			document.getElementById("changetext").innerHTML = "Type A";
+                    document.getElementById("description").innerHTML = "<p align='center'> You are Type A, which means you are: <ul> <li> Earnest </li>  <li> Reserved </li> <li> Sensible </li>  <li> Patient </li> <li> Responsible </li> </ul></p>" 
         			break;
     			case bloodtype = "b" || "B":
-        			
+        			document.getElementById("changetext").innerHTML = "Type B";
+                                        document.getElementById("description").innerHTML = "<p align='center'> You are Type B, which means you are: <ul> <li> Passionate </li>  <li> Active </li> <li> Creative </li>  <li> Flexible </li> <li> Optimistic </li> </ul></p>" 
         			break;
-    			case bloodtype = "ab" || "AB":
-       				
+    			case bloodtype = "ab" || "AB" || "aB" || "Ab":
+       				document.getElementById("changetext").innerHTML = "Type AB";
+                                        document.getElementById("description").innerHTML = "<p align='center'> You are Type AB, which means you are: <ul> <li> Calm </li>  <li> Creative </li> <li> Rational </li>  <li> Intelligent </li> <li> Sociable </li> </ul></p>" 
                     break;
-                case bloodtype = "o":
-                	
+                case bloodtype = "o" || "O":
+                	document.getElementById("changetext").innerHTML = "Type O";
+                                        document.getElementById("description").innerHTML = "<p align='center'> You are Type O, which means you are: <ul> <li> Ambitious </li>  <li> Confident </li> <li> Agreeable </li>  <li> Athletic </li> <li> Competitive </li> </ul></p>" 
                     break;
                 default:
-				document.getElementById("changetext").innerHTML = "Please input an actual bloodtype";
+				document.getElementById("changetext").innerHTML = "That is not a bloodtype. Please try again.";
+                                    document.getElementById("description").innerHTML = "<p align='center'> </p>" 
 			}           
-		}		 
+		} 
 </script>
+<div id="description">
 
+</div>
 
         
 	</body>
