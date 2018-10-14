@@ -260,5 +260,7 @@ paket-files/
 __pycache__/
 *.pyc
 
-# Ignore files with extension `.class`
+# Ignore files with extension `.class`, '.sln' and '.csproj'
 *.class
+*.sln
+*.csproj
